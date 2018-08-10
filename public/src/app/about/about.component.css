@@ -1,0 +1,9 @@
+p, h1, h3, a{
+    color: rgba(37, 83, 122);
+}
+.body{
+    height: 67vh;
+}
+p{
+    font-size: 18px;
+}

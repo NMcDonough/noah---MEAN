@@ -1,0 +1,41 @@
+.sicon{
+    height: 75px;
+    width: 75px;
+}
+.bigLink{
+    font-size: 40px;
+    color: #5DFDCB;
+}
+.body{
+    background-color: #90D7FF;
+}
+p, h1, h3, a{
+    color: rgba(37, 83, 122);
+}
+#express{
+    width: 80px;
+    height: 20px;
+    margin-top: 30px;
+}
+.project{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background-color: #2E5EAA;
+    padding: 25px;
+    margin: 15px;
+}
+.project p, h3, a{
+    color: #5DFDCB;
+}
+img{
+    margin-right: 10px;
+}
+.icons{
+    background-color: #90D7FF;
+    padding: 10px;
+    width: 115%;
+    margin-left: -60px;
+}
+p:first-of-type{
+    font-size: 18px;
+}

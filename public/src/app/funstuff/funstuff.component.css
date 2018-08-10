@@ -1,0 +1,36 @@
+.contact{
+    display: flex;
+    float: left;
+}
+img{
+    margin-right: 15px;
+    margin-top: 20px;
+    float: left;
+}
+#phone{
+    width: 25px;
+    height: 35px;
+}
+#email{
+    height: 25px;
+}
+#linkedin{
+    height: 30px;
+    width: 30px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: 20vw;
+}
+p{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+a, h3, h1, p, img{
+    color: rgba(37, 83, 122);
+}
+.body{
+    height: 70vh;
+}
