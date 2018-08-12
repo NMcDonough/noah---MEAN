@@ -497,7 +497,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>This section will contain small algorithms, methods and cool stuff I thought would be fun to do. It's always a work in progress :)</h2><br>\n  <div class=\"noteName jumbotron\">\n    <input type=\"text\" [(ngModel)]=\"name\"><br><br>\n    <!-- <input type=\"text\" readonly [(ngModel)]=\"toNotes()\"> -->\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <h2>This section will contain small algorithms, methods and cool stuff I thought would be fun to do. It's always a work in progress :)</h2><br>\n  <div class=\"noteName jumbotron\">\n    <input type=\"text\" [(ngModel)]=\"name\"><br><br>\n    <input type=\"text\" readonly [(ngModel)]=\"toNotes()\" value=\"toNotes()\">\n  </div>\n</div>"
 
 /***/ }),
 
