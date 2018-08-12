@@ -16,12 +16,16 @@ notes:any;
   ngOnInit(){
     this.letters = "abcdefghijklmnopqrstuvwxyz";
     this.notes = "ABCDEFG"
+    this.melody = "Output"
+    this.name = "Input"
   }
-
+  
   toNotes(str){
     let newStr = '';
-    for(let x of newStr){
-      console.log(this.letters.indexOf(x));
-  }
+    for(let x of str){
+      newStr += this.notes[this.letters.indexOf(x.toLowerCase()) % this.notes.length] + " ";
+    }
+
+    this.melody = newStr;
   }
 }
