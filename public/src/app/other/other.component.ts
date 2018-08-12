@@ -11,15 +11,17 @@ melody:any;
 letters:any;
 notes:any;
 
-  constructor(){
+  constructor(){}
+
+  ngOnInit(){
     this.letters = "abcdefghijklmnopqrstuvwxyz";
-    this.notes = "abcdefg"
+    this.notes = "ABCDEFG"
   }
 
-  ngOnInit() {
+  toNotes(str){
+    let newStr = '';
+    for(let x of newStr){
+      console.log(this.letters.indexOf(x));
   }
-  
-  toNotes(){
-    return "gay";
   }
 }
