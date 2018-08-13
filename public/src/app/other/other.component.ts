@@ -23,7 +23,8 @@ notes:any;
   toNotes(str){
     let newStr = '';
     for(let x of str){
-      newStr += this.notes[this.letters.indexOf(x.toLowerCase()) % this.notes.length] + " ";
+      if(x != ' ')
+        newStr += this.notes[this.letters.indexOf(x.toLowerCase()) % this.notes.length] + " ";
     }
 
     this.melody = newStr;

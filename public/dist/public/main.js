@@ -486,7 +486,7 @@ var NotfoundComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "textarea{\n    margin-bottom: -20px;\n}"
 
 /***/ }),
 
@@ -497,7 +497,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>This section will contain small algorithms, methods and cool stuff I thought would be fun to do. It's always a work in progress :)</h2><br>\n  <div class=\"noteName jumbotron\">\n    <input type=\"text\" [(ngModel)]=\"name\"><br><br>\n    <button>Convert</button>\n    <input type=\"text\" [(ngModel)]=\"melody\" readonly>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <h2>This section will contain small algorithms, methods and cool stuff I thought would be fun to do. It's always a work in progress :)</h2><br>\n  <div class=\"noteName jumbotron\">\n    <p>This little method turns a regular String input into musical notes. If you're musically inclined, it might make a neat romantic surprise if you used his/her name or a special message as a melody for a song!</p>\n    <input type=\"text\" [(ngModel)]=\"name\">\n    <button (click)=\"toNotes(name)\">Convert</button> -->\n    <textarea [(ngModel)]=\"melody\" readonly></textarea>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -524,13 +524,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var OtherComponent = /** @class */ (function () {
     function OtherComponent() {
-        this.letters = "abcdefghijklmnopqrstuvwxyz";
-        this.notes = "abcdefg";
     }
     OtherComponent.prototype.ngOnInit = function () {
+        this.letters = "abcdefghijklmnopqrstuvwxyz";
+        this.notes = "ABCDEFG";
+        this.melody = "Output";
+        this.name = "Input";
     };
-    OtherComponent.prototype.toNotes = function () {
-        return "gay";
+    OtherComponent.prototype.toNotes = function (str) {
+        var newStr = '';
+        for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
+            var x = str_1[_i];
+            if (x != ' ')
+                newStr += this.notes[this.letters.indexOf(x.toLowerCase()) % this.notes.length] + " ";
+        }
+        this.melody = newStr;
     };
     OtherComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
