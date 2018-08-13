@@ -1,4 +1,4 @@
-p, h1, h3, a{
+p, h1, h3, a, li{
     color: rgba(37, 83, 122);
 }
 .body{
@@ -6,4 +6,12 @@ p, h1, h3, a{
 }
 p{
     font-size: 18px;
+}
+li{
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+}
+.goals{
+    padding-left: 25%;
 }

@@ -2,8 +2,8 @@
   <h2>This section will contain small algorithms, methods and cool stuff I thought would be fun to do. It's always a work in progress :)</h2><br>
   <div class="noteName jumbotron">
     <p>This little method turns a regular String input into musical notes. If you're musically inclined, it might make a neat romantic surprise if you used his/her name or a special message as a melody for a song!</p>
-    <input type="text" [(ngModel)]="name">
-    <button (click)="toNotes(name)">Convert</button> -->
-    <textarea [(ngModel)]="melody" readonly></textarea>
+    <input pattern="A-Za-z" type="text" [(ngModel)]="name" class="form-control">
+    <button (click)="toNotes(name)" class="btn">Convert</button><br>
+    <textarea [(ngModel)]="melody" readonly rows=2 class="form-control"></textarea>
   </div>
 </div>

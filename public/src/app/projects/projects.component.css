@@ -1,6 +1,6 @@
 .sicon{
-    height: 75px;
-    width: 75px;
+    height: 150px;
+    width: 150px;
 }
 .bigLink{
     font-size: 40px;
@@ -13,8 +13,8 @@ p, h1, h3, a{
     color: rgba(37, 83, 122);
 }
 #express{
-    width: 80px;
-    height: 20px;
+    width: 160px;
+    height: 40px;
     margin-top: 30px;
 }
 .project{

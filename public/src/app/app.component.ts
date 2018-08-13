@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,22 +7,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 
 export class AppComponent {
-  pageFound = true;
 
-  constructor(private router: Router){}
+  constructor(){}
 
   ngOnInit(){
-    if(this.router.url === '/'){
-      this.pageFound = false;
-      this.redirect();
-    }
-    else
-      this.pageFound = true;
-  }
-
-  redirect(){
-    setTimeout(()=>{
-      this.router.navigate(['home']);
-    }, 5000)
   }
 }
